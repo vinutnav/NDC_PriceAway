@@ -1,0 +1,218 @@
+body {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	min-height: 900px;
+	max-height: 100%;
+}
+.car-container {
+	position: relative;
+	display: inline-block;
+	bottom:0%;
+	_margin-bottom: 50px;
+	margin-left:-1204px;
+}
+.car-container img {
+	width:400px;
+	height:900px;
+}
+.female-container {
+	position: relative;
+	display: inline-block;
+	bottom:0%;
+	_margin-bottom: 50px;
+	margin-left:100px;
+}
+
+.female-container img {
+	width: 45%;
+	height:800px;
+}
+.plane-container{
+	position: absolute;
+	top: 0%;
+	_display: inline-block;
+	z-index: 100;
+	margin-top: 78px;
+	margin-left: 1130px;
+	_bottom: 155%;
+}
+.plane-container img{
+	_width:40%;
+	height:200px;
+}
+.mike-container{
+	position: absolute;
+	top: 0%;
+	_display: inline-block;
+	z-index: 100;
+	margin-top: 362px;
+	margin-left: 1145px;
+	_bottom: 155%;
+}
+.mike-container img{
+	_width:40%;
+	height:200px;
+}
+.message1-container{
+	position: absolute;
+	top:0%;
+	margin-top:130px;
+	margin-left: 1220px;
+	_display: inline-block;
+}
+.message2-container{
+	position: absolute;
+	top:0%;
+	margin-top:395px;
+	_display: inline-block;
+	z-index:99;
+	margin-left:1187px;
+}
+.message3-container{
+	position: absolute;
+	top: 0%;
+	/* right: 40%; */
+	margin-left: 1232px;
+	margin-top: 627px;
+	_display: inline-block;
+	z-index: 98;
+}
+.message1-container img{
+	height:300px;
+}
+.message2-container img{
+	height:263px;
+}
+.message3-container img{
+	height:207px;
+	width:530px;
+}
+.plane-animation {
+	-webkit-animation-duration:1s;
+	-webkit-animation-name: slideinplane;
+	-webkit-animation-delay:2s;
+}
+.mike-animation {
+	-webkit-animation-duration:1s;
+	-webkit-animation-name: slideinmike;
+	-webkit-animation-delay:9s;
+}
+.message1-animation {
+	-webkit-animation-duration:1s;
+	-webkit-animation-name: slideinmessage1;
+	-webkit-animation-delay:3s;
+}
+.message2-animation {
+	-webkit-animation-duration:1s;
+	-webkit-animation-name: slideinmessage2;
+	-webkit-animation-delay:10s;
+}
+.message3-animation {
+	-webkit-animation-duration:1s;
+	-webkit-animation-name: slideinmessage;
+	-webkit-animation-delay:11s;
+}
+.female-animation {
+	-webkit-animation-duration:5s;
+	-webkit-animation-name: slideinfemale;
+	-webkit-animation-delay:4s;
+}
+.car-animation {
+	-webkit-animation-duration:2s;
+	-webkit-animation-name: slideincar;
+}
+@-webkit-keyframes slideincar {
+	from {
+		margin-left: -1404px;
+		opacity: 0
+
+	}
+	to {
+		margin-left: -1204px;
+		opacity: 1;
+
+	}
+}
+@-webkit-keyframes slideinmessage{
+	from {
+		opacity: 0;
+		margin-top:395px;
+
+	}
+	to {
+		opacity: 1;
+		margin-top: 627px;
+	}
+}
+@-webkit-keyframes slideinmessage1{
+	from {
+		opacity: 0;
+		width:0px;
+		height:0px;
+	}
+
+	to {
+		opacity: 1;
+		height:300px;
+	}
+}
+@-webkit-keyframes slideinmessage2{
+	from {
+		opacity: 0;
+		width:0px;
+		height:0px;
+	}
+
+	to {
+		opacity: 1;
+		height:263px;
+	}
+}
+@-webkit-keyframes slideinplane {
+	from {
+		margin-top:-10px;
+		opacity: 0
+	}
+	to {
+		margin-top: 78px;
+		opacity: 1;
+	}
+}
+/*@-webkit-keyframes slideinmike {
+	from {
+		top:0%;
+		opacity: 0
+	}
+
+	to {
+		top: 30%;
+		opacity: 1;
+
+	}
+}*/
+@-webkit-keyframes slideinmike  {
+    0%   {opacity:0;
+    	margin-top: 78px;}
+    25%  {opacity:0;}
+    50%  {opacity:0.1;}
+    75% {opacity:0.5;}
+    100% {opacity:1;
+    	margin-top: 362px;}
+}
+@-webkit-keyframes slideinfemale {
+	from {
+		margin-left: -800px;
+		opacity: 0;
+		margin-bottom: -50px;
+	}
+
+	to {
+		margin-left: 100px;
+		opacity: 1;
+		margin-bottom: -50px;
+	}
+}
+.opaque {
+	opacity: 0;
+}
+

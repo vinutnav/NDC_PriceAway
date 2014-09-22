@@ -1,0 +1,128 @@
+body{
+	margin:0px !important;
+}
+.main-scroll{
+	width:3000px;
+	height:100%;
+}
+.container{
+	height:100%;
+	height: 100%;
+	width:3900px;
+	display: inline-block;
+}
+.slide-1{
+	vertical-align: top;
+ 	background:#0590e5;
+	 height:100%;
+	 height: 100%;
+	 width:1950px;
+	 display: inline-block;
+	 margin:0px !important;
+	 padding: 0px !important;
+}
+.hp-img{
+	width:700px;
+	height:500px;
+	margin-top: 200px;
+	margin-left: 600px;
+}
+.slide-1 .hp-icon{
+	width:100%;
+	_height:100%;
+}
+#next{
+	margin-left: 1100px;
+	margin-top: -200px;
+}
+#next img{
+	color:#fff !important;
+	border:#fff !important;
+}
+#slide1{
+	z-index:20;
+}
+.slide-2{
+	vertical-align: top;
+	background:url('../images/Untitled-2-03.png');
+	height:100%;
+	width:1950px;
+	display: inline-block;
+	_background-attachment: fixed;
+	margin-left:-5px !important;
+	margin-right: -5px !important;
+	/*-webkit-transition: background 1s ease-out 0.3s;
+	-moz-transition: background 1s ease-out 0.3s;
+	-o-transition: background 1s ease-out 0.3s;
+	-ms-transition: background 1s ease-out 0.3s;
+	transition: background 1s ease-out 0.3s;*/
+}
+.slide-2 .img{
+	height:100% !important;
+	width:100%;
+}
+/*.slide-3{
+	vertical-align: top;
+	background-color: yellow;
+	height:920px;
+	width:2550px;
+	display: inline-block;
+	background-attachment: fixed;
+	 margin:0px !important;
+}*/
+.bluediv{
+  background-color: #0590e5;
+  height: 100%;
+  display: inline-block;
+}
+.hp-name{
+  font-size: 110px;
+  font-weight: 900px;
+  color: #fff;
+  font-style:normal;
+  margin-bottom: 5px;
+  padding-top: 300px;
+  padding-left: 900px;
+}
+
+/*.car{
+	width:1050px;
+	height:500px;
+	display: inline-block;
+	padding-top:400px;
+	margin-left: -800px;
+	background-attachment: fixed;
+}
+.car img{
+	height:100%;
+}*/
+.leftbar{
+	display: inline-block;
+	width:1200px;
+	height:700px;
+}
+/*.female{
+	width:1000px;
+	height:700px;
+	padding-top: 220px;
+	margin-bottom: -250px;
+	display: inline-block;
+	margin-left: -700px;
+	position: relative;
+	z-index:10;
+}
+
+.female img{
+	height:100%;
+}*/
+/*.car-container{
+	-webkit-animation: fromLeftAnim1 3s ease-in-out 1.2s both;
+	-moz-animation: fromLeftAnim1 3s ease-in-out 1.2s both;
+	-o-animation: fromLeftAnim1 3s ease-in-out 1.2s both;
+	-ms-animation: fromLeftAnim1 3s ease-in-out 1.2s both;
+	animation: fromLeftAnim1 3s ease-in-out 1.2s both;
+}
+@-webkit-keyframes fromLeftAnim1{
+	0%{ left: -110%; opacity: 0; }
+	100%{ left:-1200px; opacity: 1; }
+}*/

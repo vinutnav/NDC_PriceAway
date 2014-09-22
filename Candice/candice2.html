@@ -1,0 +1,83 @@
+<html>
+     <head>
+		<meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/candicestyle.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/mycss.css" />
+		
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/scroll-converter.min.js"></script>
+		<script type="text/javascript" src="js/parallax.js"></script>
+		<!-- <script type="text/javascript" src="js/wow.min.js"></script> -->
+ <script>
+   // new WOW().init();
+ </script>
+
+	</head>
+	<body class="main-scroll">
+	<div class="container">
+		<div class="slide-1 bluediv" id="slide1">
+			<div class="hp-img"><img class="hp-icon" src="images/icon-01.png"/>
+			<div id="next"><img src="images/53558-42.png" /></div>
+			</div>
+		</div>
+		<div class="slide-2" id="slide2">
+			<div class="leftbar"></div>
+			<div class="car-container opaque"><img class="" src="images/crop-car.png"/></div>
+			<div class="female-container opaque"><img src="images/Untitled-2-04.png"/></div>
+			<div class="plane-container opaque"><img src="images/Untitled-4-02.png"/></div>
+			<div class="message1-container opaque"><img class="message-container" src="images/Untitled-6-04.png"/></div>
+			<div class="mike-container opaque"><img src="images/Untitled-4-03.png"/></div>
+			<div class="message2-container opaque"><img class="message-container2" src="images/Untitled-6-08.png"/></div>
+			<div class="message3-container opaque"><img src="images/Untitled-6-07.png"/></div>
+		</div>
+		
+		<!-- <div class="slide-3" id="slide3">
+			<button>back</button>
+			3
+			<button>next</button>
+		</div> -->
+	</div>
+
+	</body>
+	<script>
+	$(document).ready(function(){
+		$(document).on("scroll", function(){
+			if($(window).scrollLeft()>$(".car-container").offset().left)
+			{
+				$(".car-container").addClass("car-animation").removeClass('opaque');
+				
+				$(".plane-container").addClass("plane-animation").delay(2003).queue(function(next){
+    				$(this).removeClass("opaque");
+    					next();
+					});
+				$(".message-container").addClass("message1-animation").delay(3005).queue(function(next){
+    				$(".message1-container").removeClass("opaque");
+    					next();
+					});
+				$(".female-container").addClass("female-animation").delay(4005).queue(function(next){
+    				$(this).removeClass("opaque");
+    					next();
+					});
+				$(".mike-container").addClass("mike-animation").delay(9005).queue(function(next){
+    				$(this).removeClass("opaque");
+    					next();
+					});
+				$(".message-container2").addClass("message2-animation").delay(10005).queue(function(next){
+    				$(".message2-container").removeClass("opaque");
+    					next();
+					});
+				$(".message3-container").addClass("message3-animation").delay(11005).queue(function(next){
+    				$(this).removeClass("opaque");
+    					next();
+					});
+			}
+		})
+		$( "#next" ).click(function() {
+			window.scrollTo(1950,500);
+		});
+	})
+	</script>
+
+</html>
